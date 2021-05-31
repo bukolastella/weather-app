@@ -3,6 +3,7 @@
   height: 100vh;
   padding: 2rem;
   box-sizing: border-box;
+  position: fixed;
 }
 .Top {
   height: 20%;
@@ -92,11 +93,11 @@
     display: none;
   }
 }
-@media (max-height: 420px) {
+/* @media (max-height: 420px) {
   .Bottom {
     display: none;
   }
   .Flex {
     height: 80%;
   }
-}
+} */
