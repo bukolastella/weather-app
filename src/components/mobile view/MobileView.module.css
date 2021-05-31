@@ -92,7 +92,7 @@
     display: none;
   }
 }
-@media (min-height: 420px) {
+@media (max-height: 420px) {
   .Bottom {
     display: none;
   }
