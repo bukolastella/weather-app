@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bukolastella/weather-app/static/css/main.abafeebb.chunk.css",
+    "main.js": "/bukolastella/weather-app/static/js/main.3407a10d.chunk.js",
+    "main.js.map": "/bukolastella/weather-app/static/js/main.3407a10d.chunk.js.map",
+    "runtime-main.js": "/bukolastella/weather-app/static/js/runtime-main.c2908d52.js",
+    "runtime-main.js.map": "/bukolastella/weather-app/static/js/runtime-main.c2908d52.js.map",
+    "static/js/2.eb6c87a1.chunk.js": "/bukolastella/weather-app/static/js/2.eb6c87a1.chunk.js",
+    "static/js/2.eb6c87a1.chunk.js.map": "/bukolastella/weather-app/static/js/2.eb6c87a1.chunk.js.map",
+    "static/js/3.dce44ab7.chunk.js": "/bukolastella/weather-app/static/js/3.dce44ab7.chunk.js",
+    "static/js/3.dce44ab7.chunk.js.map": "/bukolastella/weather-app/static/js/3.dce44ab7.chunk.js.map",
+    "index.html": "/bukolastella/weather-app/index.html",
+    "static/css/main.abafeebb.chunk.css.map": "/bukolastella/weather-app/static/css/main.abafeebb.chunk.css.map",
+    "static/js/2.eb6c87a1.chunk.js.LICENSE.txt": "/bukolastella/weather-app/static/js/2.eb6c87a1.chunk.js.LICENSE.txt",
+    "static/media/kupono1.d297ed43.jpg": "/bukolastella/weather-app/static/media/kupono1.d297ed43.jpg",
+    "static/media/tom-barrett-hgGplX3PFBg-unsplash.a6e0b2eb.jpg": "/bukolastella/weather-app/static/media/tom-barrett-hgGplX3PFBg-unsplash.a6e0b2eb.jpg",
+    "static/media/valentin-muller-bWtd1ZyEy6w-unsplash.db0c808f.jpg": "/bukolastella/weather-app/static/media/valentin-muller-bWtd1ZyEy6w-unsplash.db0c808f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2908d52.js",
+    "static/js/2.eb6c87a1.chunk.js",
+    "static/css/main.abafeebb.chunk.css",
+    "static/js/main.3407a10d.chunk.js"
+  ]
+}
