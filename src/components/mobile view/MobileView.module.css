@@ -8,7 +8,7 @@
   height: 20%;
 }
 .Date {
-  color: blue;
+  color: orange;
   /* color: white; */
   text-transform: capitalize;
   display: flex;
@@ -57,8 +57,8 @@
   justify-content: center;
   max-width: 300px;
   align-items: center;
-  height: 219px;
-  /* height: 35%; */
+  /* height: 219px; */
+  height: 35%;
   margin: auto;
   text-transform: capitalize;
   color: white;
@@ -75,8 +75,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 600px;
-  height: 187px;
-  /* height: 30%; */
+  /* height: 187px; */
+  height: 30%;
   margin: auto;
   column-gap: 1px;
   grid-template-rows: 1fr 1fr;
