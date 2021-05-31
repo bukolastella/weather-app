@@ -1,0 +1,15 @@
+.SearchResult {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  justify-content: space-evenly;
+  height: 70%;
+  margin: 1rem 3rem;
+  color: rgba(255, 255, 255, 0.534);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+  cursor: pointer;
+}
+
+.SearchHover:hover {
+  font-size: 1.1rem;
+}

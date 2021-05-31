@@ -1,0 +1,65 @@
+.Degree {
+  font-size: 4rem;
+  color: white;
+  /* grid-row: 1/-1; */
+  line-height: 5rem;
+}
+
+.Location {
+  font-size: 3.5rem;
+  color: white;
+  text-transform: capitalize;
+}
+.TimeDate {
+  font-size: 1rem;
+  display: flex;
+  text-transform: capitalize;
+  /* word-spacing: 0.3rem; */
+  color: #f1f6fa;
+}
+.Hypen {
+  margin: 0 0.4rem;
+}
+
+.Icon {
+  color: white;
+  font-size: 2.5rem;
+}
+.Weather {
+  font-size: 1rem;
+  color: #f1f6fa;
+  text-transform: capitalize;
+}
+
+.MainView {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  /* width: 500px; */
+  width: 50%;
+  position: fixed;
+  bottom: 15%;
+  left: 7%;
+}
+.Flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 850px) {
+  .Degree {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+  .MainView {
+    width: 50%;
+  }
+  .Location,
+  .Icon {
+    font-size: 2rem;
+  }
+  .TimeDate,
+  .Weather {
+    font-size: 0.9rem;
+  }
+}

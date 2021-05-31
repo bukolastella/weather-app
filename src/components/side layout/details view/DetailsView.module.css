@@ -1,0 +1,14 @@
+.DetailsView {
+  height: 40%;
+  padding: 1rem 0rem;
+  margin: 0rem 3rem;
+}
+.Header {
+  margin: 2rem 0rem;
+  text-transform: capitalize;
+  color: white;
+}
+.Dash {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+}

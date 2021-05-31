@@ -1,0 +1,11 @@
+.ColumnDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Title {
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.534);
+  margin-bottom: 0.5rem;
+}

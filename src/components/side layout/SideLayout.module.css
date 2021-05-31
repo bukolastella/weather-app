@@ -1,0 +1,7 @@
+.SideLayout {
+  width: 35%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  backdrop-filter: blur(50px);
+}

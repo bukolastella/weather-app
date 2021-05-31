@@ -1,0 +1,11 @@
+.DetailsResult {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 2rem 0rem;
+}
+.Title {
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.534);
+}
