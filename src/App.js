@@ -10,7 +10,7 @@ import Spinner from "./components/spinner/Spinner";
 function App() {
   const state = useSelector((state) => state.data.description);
   const Spinnerstate = useSelector((state) => state.spinner.spinnerState);
-  console.log(Spinnerstate);
+  // console.log(Spinnerstate);
   let startImg = clear;
   if (state.includes("cloud")) {
     startImg = cloudy;
@@ -27,11 +27,13 @@ function App() {
     >
       {Spinnerstate && <Spinner />}
 
-      <div className={classes.Hidden}>
-        <MainView />
-        <SideLayout />
+      <div>
+        <div className={classes.Hidden}>
+          <MainView />
+          <SideLayout />
+        </div>
+        {!Spinnerstate && <MobileView />}
       </div>
-      <MobileView />
     </div>
   );
 }

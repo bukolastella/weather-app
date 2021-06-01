@@ -6,7 +6,7 @@ import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
 import ColumnDetails from "./column Details/ColumnDetails";
 import { useDispatch } from "react-redux";
 import { dataActions } from "../../store/index";
-import { pastActions } from "../../store/index";
+import { pastActions, spinnerActions } from "../../store/index";
 
 const MobileView = () => {
   const data = useSelector((state) => state.data);
@@ -21,6 +21,8 @@ const MobileView = () => {
   }
 
   const helper = async (inputValue, opt = null) => {
+    dispatch(spinnerActions.setSpinner(true));
+
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=c2c7023fbf71a1033c4694bd51fce603`
     );
@@ -56,9 +58,11 @@ const MobileView = () => {
     dispatch(dataActions.getCityName(formatData));
     if (!opt) dispatch(pastActions.change(data.name));
     else dispatch(pastActions.change(opt));
+    dispatch(spinnerActions.setSpinner(false));
   };
 
   const submit = async (event) => {
+    dispatch(spinnerActions.setSpinner(true));
     event.preventDefault();
     if (ref.current.value === "") {
       return;
@@ -70,7 +74,8 @@ const MobileView = () => {
         " Location not available, \n Check your internet connection and try again"
       );
     }
-    ref.current.value = "";
+    // ref.current.value = "";
+    dispatch(spinnerActions.setSpinner(false));
   };
 
   return (
