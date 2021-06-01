@@ -74,8 +74,8 @@ const MobileView = () => {
         " Location not available, \n Check your internet connection and try again"
       );
     }
-    // ref.current.value = "";
     dispatch(spinnerActions.setSpinner(false));
+    // ref.current.value = "";
   };
 
   return (
