@@ -6,9 +6,11 @@ import SideLayout from "./components/side layout/SideLayout";
 import classes from "./App.module.css";
 import MobileView from "./components/mobile view/MobileView";
 import { useSelector } from "react-redux";
-
+import Spinner from "./components/spinner/Spinner";
 function App() {
   const state = useSelector((state) => state.data.description);
+  const Spinnerstate = useSelector((state) => state.spinner.spinnerState);
+  console.log(Spinnerstate);
   let startImg = clear;
   if (state.includes("cloud")) {
     startImg = cloudy;
@@ -23,6 +25,8 @@ function App() {
       }}
       className={classes.App}
     >
+      {Spinnerstate && <Spinner />}
+
       <div className={classes.Hidden}>
         <MainView />
         <SideLayout />

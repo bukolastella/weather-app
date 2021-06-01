@@ -55,11 +55,25 @@ const pastResults = createSlice({
     },
   },
 });
+const spinner = createSlice({
+  name: "spinner",
+  initialState: { spinnerState: null },
+  reducers: {
+    setSpinner(state, action) {
+      state.spinnerState = action.payload;
+    },
+  },
+});
 
 const store = configureStore({
-  reducer: { data: dataSlice.reducer, past: pastResults.reducer },
+  reducer: {
+    data: dataSlice.reducer,
+    past: pastResults.reducer,
+    spinner: spinner.reducer,
+  },
 });
 
 export const dataActions = dataSlice.actions;
 export const pastActions = pastResults.actions;
+export const spinnerActions = spinner.actions;
 export default store;

@@ -3,13 +3,16 @@ import React, { useEffect } from "react";
 import SearchBar from "./search bar/SearchBar";
 import SearchResult from "./search result/SearchResult";
 import { useDispatch } from "react-redux";
-import { dataActions } from "../../../store/index";
+import { dataActions, spinnerActions } from "../../../store/index";
 import { pastActions } from "../../../store/index";
 
 const SearchView = () => {
   const dispatch = useDispatch();
+
   useEffect(() => {
     const helper = async (latitude, longitude) => {
+      dispatch(spinnerActions.setSpinner(true));
+
       let y = new Date()
         .toLocaleDateString("en-us", {
           year: "numeric",
@@ -44,6 +47,7 @@ const SearchView = () => {
       };
       dispatch(dataActions.getCityName(formatData));
       dispatch(pastActions.change(data.cityName));
+      dispatch(spinnerActions.setSpinner(false));
     };
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -58,7 +62,10 @@ const SearchView = () => {
       );
     }
   }, [dispatch]);
+
   const helper = async (inputValue, opt = null) => {
+    dispatch(spinnerActions.setSpinner(true));
+
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=c2c7023fbf71a1033c4694bd51fce603`
     );
@@ -94,6 +101,7 @@ const SearchView = () => {
     dispatch(dataActions.getCityName(formatData));
     if (!opt) dispatch(pastActions.change(data.name));
     else dispatch(pastActions.change(opt));
+    dispatch(spinnerActions.setSpinner(false));
   };
   return (
     <div className={classes.SearchView}>
